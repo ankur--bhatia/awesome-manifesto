@@ -1,67 +1,43 @@
 # Manifesto
 
-What I would like to see in a company of my dream.
+What I would like to see in a company that I work for.
 
 ### Git
 - [ ] 1 commit per change, do squash
-  - you can easily work with changes
-- [ ] there might be few (alredy squashed) commits in a pull request
-  - don't make huge changes they will bury truth
-- [ ] touch few things at once
-  - it's kinda obvious
+- [ ] do not create massive pull requests, they are hard to review, split your work
 - [ ] rebase instead of merge
-  - no merge commits, cleaner git history
 - [ ] pull request must have 2+ approvals
-  - changes must be visible to the team members
-- [ ] master is read-only
-  - it's a rule. always. no exceptions.
+- [ ] master is read-only, it's a rule. always. no exceptions.
 - [ ] delete branches after a merge
-  - better navigation and git performance
-- [ ] release tags
-  - tracking releases/deployments are simpler
-- [ ] git submodules for components
-  - better architecture consistency
-  - UPD: highly debatable point
+- [ ] use release tags
 - [ ] no global history changes
-  - prevents git history misuse
-- [ ] commit message format
-  - clear, well explanatory, structured
+- [ ] commit message format - use commitizen or something similar
+- [ ] use git LFS or mercurial for large files
+- [ ] run tests before pushing 
+  - be careful with git hooks
 
 ### CI
 - [ ] auto-revert on failure
-  - roll back changes, no broken code in the master
 - [ ] run at any commit
-  - the obvious ability for CI
 - [ ] CI plan in git
-  - know all plan changes and have consistency
 - [ ] warn about formatting verification
-  - no developer disruption in the future
 - [ ] warn about coverage illness
-  - coverage is quite important thing
 - [ ] track test failures and flakiness
-  - statistics, hints, conclusions
 - [ ] store build logs for 3+ months
-  - having analytics and working links to them
-- [ ] docs are generated from the code
-  - end-user changes must be explicit
 - [ ] locally reproducible builds
-  - re-run part of a job on my local machine
-- [ ] use Makefile, Bash
-  - simple, easy, well known
+- [ ] automate builds using makefiles, gulp etc.
 
 ### Code health
 - [ ] document your code
-  - giving a small context for API will save a lot of time
+- [ ] docs are generated from the code
 - [ ] use linters and code analysis all the time
-  - the best handling for the best code
 - [ ] fork instead of hack
-  - logic isolation at the beginning
-- [ ] touch legacy, often
-  - it becomes non-legacy faster
+- [ ] touch legacy, often - it becomes non-legacy faster
 - [ ] remove deprecated stuff
   - having a bloated dead code is a mistake
-- [ ] also remove old code
+- [ ] remove old code
   - it adds even less reasons to the new code
+- [ ] do not keep commented out code
 - [ ] use TODO, BUG, XXX in code
   - jumping to the issue tracker can be minimised
 - [ ] no experiments in the master
