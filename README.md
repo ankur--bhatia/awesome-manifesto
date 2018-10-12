@@ -94,17 +94,14 @@ What I would like to see in a company that I work for.
 - [ ] avoid bus factor as much as possible
   - moving/cancelling unimportant meeting because of 1 person is a bad sign
 
-### Communications
+### Communication
 - [ ] use the best apps
   - fast, flexible, pleasurable
-- [ ] outcomes of important discussions should be on a wiki
-  - better visibility for outcomes
+- [ ] outcomes of important discussions should be saved - better visibility for decisions
 - [ ] only important notifications
   - @all should be rare for irrelevant updates
 - [ ] easy access to any team room
-  - that's obvious, hey
 - [ ] do not delete personal chats with inactive users
-  - some chats contains interesting ideas
 - [ ] closed ticket must contain a link to the changes
   - every change must be easy accessible and visible for others
 
