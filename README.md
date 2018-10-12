@@ -33,79 +33,51 @@ What I would like to see in a company that I work for.
 - [ ] use linters and code analysis all the time
 - [ ] fork instead of hack
 - [ ] touch legacy, often - it becomes non-legacy faster
-- [ ] remove deprecated stuff
-  - having a bloated dead code is a mistake
 - [ ] remove old code
-  - it adds even less reasons to the new code
 - [ ] do not keep commented out code
-- [ ] use TODO, BUG, XXX in code
-  - jumping to the issue tracker can be minimised
+- [ ] use TODO, BUG, XXX in code - jumping to the issue tracker can be minimised
 - [ ] no experiments in the master
-  - use your 20% time as a playground, please
-- [ ] allow to change log-level on the fly
-  - this will simplify production's debug routine
+- [ ] allow to change log-level on the fly - this will simplify production's debug routine
 - [ ] limit your log file, 'cause it might grow unlimited
-  - this might cause troubles to your app, be careful
 - [ ] store your config in /etc/myapp and logs in /var/log/myapp
-  - this will make everything more structured and well defined
 - [ ] all modules must have the same structure
-  - similar environment everywhere is a good idea
-- [ ] if you can’t show a bottleneck, don’t start to optimise it
-  - it might be interesting and challenging, but useless
+- [ ] if you can’t show a bottleneck, don’t start to optimise it - it might be interesting and challenging, but useless
 
 ### Database
 - [ ] keep models normalized
-  - less storage, better performance
-- [ ] think about your data
-  - don't use SQL/NoSQL without a reason
+- [ ] think about your data - don't use SQL/NoSQL without a reason
 - [ ] use timestamp to store a date/time
-  - this will save you from formatting hell
 - [ ] log slow queries
-  - see what is happening in database and who is too greedy
 - [ ] don't put business logic into db or at least make it loosely coupled
-  - this will give you an easy migration to another db
 
 ### Dependencies
+- [ ] add with care, only when you're using *most* of the features
 - [ ] bump libs on a permanent basis
-  - the new version is expected to be better
 - [ ] have a local cache-server with deps
-  - adds stability to the infrastructure
 - [ ] pin your dependencies to a specific version
-  - accidental commit to dependency's master will break nothing
 - [ ] prefer mature technology, rather then hyped one
-  - mature will die slower, then hyped
 
 ### Tests
-- [ ] use one test framework
-  - a similar environment is better
-- [ ] show results, not just stack traces
-  - some failures are obvious with visible result
-- [ ] isolated tests
-  - use beforeTest and afterTest aggressively
+- [ ] use one test framework - a similar environment is better
+- [ ] show results, not just stack traces - some failures are obvious with visible result
+- [ ] isolate tests
+- [ ] parallelize tests
 - [ ] TDD
-  - it really works
-- [ ] measure a code coverage
-  - quick and easy way to eliminate bugs  
+- [ ] measure code coverage
 - [ ] test your backups
-  - they might be broken
 
 ### Team
-- [ ] pairing, 50% and more
-  - you're doing better, you're not bored
+- [ ] pair programming
 - [ ] high-level stand-ups, time bounded
   - less info about irrelevant stuff
 - [ ] 2-3 week sprints
   - have an achievable sprint goal
-  - UPD: deppends on team/project, might be unuseful
 - [ ] per sprint roles
-  - it's quite comfortable time bounds
 - [ ] only urgent topics are face-to-face
-  - fewer distractions for unimportant things
 - [ ] friendly atmosphere
   - no insulting jokes, no trolling, respectful environment
-- [ ] 'coding rockstar'
-  - it is a demotivation, not an inspiration
-- [ ] if you're on the vacations - specify date range
+- [ ] 'coding rockstar' - it is a demotivation, not an inspiration
+- [ ] if you're on vacations - specify date range
   - it'll be easier to find someone else or postpone the question
 - [ ] FAQ for newcomers
   - 30-day plan with all stuff that they should accomplish
